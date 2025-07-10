@@ -631,9 +631,8 @@ async def test_is_on(
     assert hc.is_on(components=[const.KEY_COMPONENTID_SMOOTHING])
     assert hc.is_on(components=[const.KEY_COMPONENTID_BLACKBORDER])
     assert not hc.is_on(components=[const.KEY_COMPONENTID_FORWARDER])
-    assert not hc.is_on(components=[const.KEY_COMPONENTID_BOBLIGHTSERVER])
     assert not hc.is_on(components=[const.KEY_COMPONENTID_GRABBER])
-    assert not hc.is_on(components=[const.KEY_COMPONENTID_AUDIO])
+    assert not hc.is_on(components=[const.KEY_COMPONENTID_HDR])
     assert hc.is_on(components=[const.KEY_COMPONENTID_V4L])
     assert hc.is_on(components=[const.KEY_COMPONENTID_LEDDEVICE])
 
